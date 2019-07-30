@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-26 19:59:34</sys_created_on>
+        <sys_id>719f7c87dbf23300b54c146139961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_86691_heardit_ratings.x_86691_heardit.user</sys_name>
+        <sys_package display_value="HeardIT" source="x_86691_heardit">684cf72edb723300b54c146139961914</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HeardIT">684cf72edb723300b54c146139961914</sys_scope>
+        <sys_security_acl display_value="x_86691_heardit_ratings">759f7487dbf23300b54c14613996195c</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_719f7c87dbf23300b54c146139961919</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-26 19:59:34</sys_updated_on>
+        <sys_user_role display_value="x_86691_heardit.user" name="x_86691_heardit.user">6c4cf7a2dbb23300b54c14613996194f</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

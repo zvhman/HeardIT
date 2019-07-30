@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Ratings" max_length="40" name="x_86691_heardit_ratings" type="collection">
+        <element label="Author" max_length="100" name="author" type="string"/>
+        <element label="Book Title" mandatory="true" max_length="500" name="book" type="string"/>
+        <element label="Comments" max_length="1000" name="comments" type="string"/>
+        <element choice="1" label="Genre" max_length="40" name="genre" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Action/Adventure" sequence="0" value="Action/Adventure"/>
+                <element inactive_on_update="false" label="Autobiography/Biography/Memoir" sequence="1" value="Autobiography/Biography/Memoir"/>
+                <element inactive_on_update="false" label="Children's Fiction" sequence="2" value="Children's Fiction"/>
+                <element inactive_on_update="false" label="Comedy/Humor" sequence="3" value="Comedy/Humor"/>
+                <element inactive_on_update="false" label="Crime/Mystery" sequence="4" value="Crime/Mystery"/>
+                <element inactive_on_update="false" label="Drama/Romance" sequence="5" value="Drama/Romance"/>
+                <element inactive_on_update="false" label="History/Classic" sequence="6" value="History/Classic"/>
+                <element inactive_on_update="false" label="Horror/Paranormal" sequence="7" value="Horror/Paranormal"/>
+                <element inactive_on_update="false" label="Motivational/Educational/Health &amp; Wellness" sequence="8" value="Motivational/Educational/Health &amp; Wellness"/>
+                <element inactive_on_update="false" label="Mystery/Suspense/Thriller" sequence="9" value="Mystery/Suspense/Thriller"/>
+                <element inactive_on_update="false" label="Poetry" sequence="10" value="Poetry"/>
+                <element inactive_on_update="false" label="Religion/Spirituality" sequence="11" value="Religion/Spirituality"/>
+                <element inactive_on_update="false" label="Sci-Fi/Fantasy" sequence="12" value="Sci-Fi/Fantasy"/>
+                <element inactive_on_update="false" label="Other" sequence="13" value="Other"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Rating Date" max_length="40" name="rating_date" type="glide_date"/>
+        <element label="Reviewer" max_length="80" name="reviewer" type="string"/>
+        <element choice="1" label="Stars" mandatory="true" max_length="40" name="stars" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="4" value="5"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="1000" name="u_comments" type="string"/>
+        <index name="index">
+            <element name="book"/>
+        </index>
+        <index name="index2">
+            <element name="reviewer"/>
+        </index>
+    </element>
+</database>

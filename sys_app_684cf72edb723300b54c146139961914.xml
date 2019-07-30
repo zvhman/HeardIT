@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <can_edit_in_studio>false</can_edit_in_studio>
+        <enforce_license>none</enforce_license>
+        <js_level>helsinki_es5</js_level>
+        <licensable>true</licensable>
+        <license_category>none</license_category>
+        <license_model>none</license_model>
+        <logo/>
+        <menu display_value="HeardIT">ac4cf7a2dbb23300b54c14613996194c</menu>
+        <name>HeardIT</name>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>x_86691_heardit</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description/>
+        <source>x_86691_heardit</source>
+        <store_correlation_id/>
+        <store_url/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-25 20:26:55</sys_created_on>
+        <sys_id>684cf72edb723300b54c146139961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-25 20:26:55</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <user_role display_value="x_86691_heardit.user" name="x_86691_heardit.user">6c4cf7a2dbb23300b54c14613996194f</user_role>
+        <vendor/>
+        <vendor_prefix/>
+        <version>1.0.0</version>
+    </sys_app>
+</record_update>
