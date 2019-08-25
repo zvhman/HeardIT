@@ -64,6 +64,14 @@
         <sys_updated_on>2019-07-26 20:59:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
+        <u_calories/>
+        <u_carb/>
+        <u_fat/>
+        <u_fiber/>
+        <u_image/>
+        <u_name/>
+        <u_protein/>
+        <u_short_description/>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
