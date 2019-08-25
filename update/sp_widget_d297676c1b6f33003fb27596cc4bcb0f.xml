@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	var shared = c.widget.options.shared;
+	c.title = function title(newVal){
+		return angular.isDefined(newVal) ? (shared.title = newVal) : shared.title;
+	}
+	c.author = function author(newVal){
+		return angular.isDefined(newVal) ? (shared.author = newVal) : shared.author;
+	}
+	c.genre = function genre(newVal){
+		return angular.isDefined(newVal) ? (shared.genre = newVal) : shared.genre;
+	}
+	c.stars = function stars(newVal){
+		return angular.isDefined(newVal) ? (shared.stars = newVal) : shared.stars;
+	}
+	c.comments = function comments(newVal){
+		return angular.isDefined(newVal) ? (shared.comments = newVal) : shared.comments;
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>rating_form</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Rating Form</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-25 20:37:39</sys_created_on>
+        <sys_id>d297676c1b6f33003fb27596cc4bcb0f</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>Rating Form</sys_name>
+        <sys_package display_value="HeardIT" source="x_86691_heardit">684cf72edb723300b54c146139961914</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HeardIT">684cf72edb723300b54c146139961914</sys_scope>
+        <sys_update_name>sp_widget_d297676c1b6f33003fb27596cc4bcb0f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-25 22:14:52</sys_updated_on>
+        <template><![CDATA[<form class="form-horizontal"
+      ng-model-options="{getterSetter: true}">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Form Name</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Title</label>  
+  <div class="col-md-4">
+  <input id="bookTitle" 
+         ng-model='c.title' 
+         ng-model-options="{getterSetter:true}"
+         name="textinput" 
+         type="text" 
+         placeholder="placeholder" 
+         class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Author</label>  
+  <div class="col-md-4">
+  <input id="bookAuthor" 
+         ng-model='c.author' 
+         ng-model-options="{getterSetter:true}"
+         name="textinput" 
+         type="text" 
+         placeholder="placeholder" 
+         class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Genre</label>
+  <div class="col-md-4">
+    <select id="bookGenre" 
+            ng-model='c.genre' 
+            ng-model-options="{getterSetter:true}"
+            name="selectbasic"
+            class="form-control">
+      <option value="">Pick One</option>
+      <option value="Action/Adventure">Action/Adventure</option>
+      <option value="Autobiography/Biography/Memoir">Autobiography/Biography/Memoir</option>
+      <option value="Children's Fiction">Children's Fiction</option>
+      <option value="Comedy/Humor">Comedy/Humor</option>
+      <option value="Crime/Mystery">Crime/Mystery</option>
+      <option value="Drama/Romance">Drama/Romance</option>
+      <option value="History/Classic">History/Classic</option>
+      <option value="Horror/Paranormal">Horror/Paranormal</option>
+      <option value="Motivational/Educational/Health & Wellness">Motivational/Educational/Health &amp; Wellness</option>
+      <option value="Mystery/Suspense/Thriller">Mystery/Suspense/Thriller</option>
+      <option value="Poetry">Poetry</option>
+      <option value="Religion/Spirituality">Religion/Spirituality</option>
+      <option value="Sci-Fi/Fantasy">Sci-Fi/Fantasy</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Stars</label>  
+  <div class="col-md-4">
+  <uib-rating ng-model='c.stars' 
+              ng-model-options="{getterSetter:true}"
+              max="5"
+              ></uib-rating>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Comments</label>
+  <div class="col-md-4">                     
+    <textarea ng-model='c.comments' 
+              ng-model-options="{getterSetter:true}"
+              class="form-control" 
+              id="bookComments" 
+              name="bookComments">default text</textarea>
+    
+  </div>
+</div>
+</fieldset>
+</form>
+]]></template>
+    </sp_widget>
+</record_update>

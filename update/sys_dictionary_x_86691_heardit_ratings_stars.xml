@@ -53,25 +53,17 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-07-26 20:10:49</sys_created_on>
-        <sys_id>b8b1850bdbf23300b54c1461399619f0</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_id>c13bdbe81b2f33003fb27596cc4bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Stars</sys_name>
         <sys_package display_value="HeardIT" source="x_86691_heardit">684cf72edb723300b54c146139961914</sys_package>
         <sys_policy/>
         <sys_scope display_value="HeardIT">684cf72edb723300b54c146139961914</sys_scope>
         <sys_update_name>sys_dictionary_x_86691_heardit_ratings_stars</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-07-26 21:17:45</sys_updated_on>
+        <sys_updated_on>2019-08-25 19:41:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
-        <u_calories/>
-        <u_carb/>
-        <u_fat/>
-        <u_fiber/>
-        <u_image/>
-        <u_name/>
-        <u_protein/>
-        <u_short_description/>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>

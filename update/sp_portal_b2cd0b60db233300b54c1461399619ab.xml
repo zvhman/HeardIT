@@ -30,6 +30,7 @@
         <sys_updated_on>2019-08-25 19:08:39</sys_updated_on>
         <theme/>
         <title>HeardIT</title>
+        <ts_index_group/>
         <url_suffix>heardit</url_suffix>
     </sp_portal>
     <sys_translated_text action="delete_multiple" query="documentkey=b2cd0b60db233300b54c1461399619ab"/>

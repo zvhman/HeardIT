@@ -17,7 +17,7 @@
         <column_label>Rating Date</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>javascript:gs.now()</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -25,7 +25,7 @@
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
-        <dynamic_default_value/>
+        <dynamic_default_value display_value="Now (Date)">fb7553e85f220100a9ad2572f2b477b4</dynamic_default_value>
         <dynamic_ref_qual/>
         <element>rating_date</element>
         <element_reference>false</element_reference>
@@ -53,28 +53,20 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-07-26 20:10:49</sys_created_on>
-        <sys_id>f7c18dc7dbf23300b54c146139961969</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_id>413bdbe81b2f33003fb27596cc4bcb72</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Rating Date</sys_name>
         <sys_package display_value="HeardIT" source="x_86691_heardit">684cf72edb723300b54c146139961914</sys_package>
         <sys_policy/>
         <sys_scope display_value="HeardIT">684cf72edb723300b54c146139961914</sys_scope>
         <sys_update_name>sys_dictionary_x_86691_heardit_ratings_rating_date</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-07-26 20:10:49</sys_updated_on>
+        <sys_updated_on>2019-08-25 20:11:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
-        <u_calories/>
-        <u_carb/>
-        <u_fat/>
-        <u_fiber/>
-        <u_image/>
-        <u_name/>
-        <u_protein/>
-        <u_short_description/>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
+        <use_dynamic_default>true</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>

@@ -22,8 +22,8 @@
             </choice>
         </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Rating Date" max_length="40" name="rating_date" type="glide_date"/>
-        <element label="Reviewer" max_length="80" name="reviewer" type="string"/>
+        <element default="javascript:gs.now()" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Rating Date" max_length="40" name="rating_date" type="glide_date" use_dynamic_default="true"/>
+        <element default="javascript: gs.getUserDisplayName ()" label="Reviewer" max_length="80" name="reviewer" type="string"/>
         <element choice="1" label="Stars" mandatory="true" max_length="40" name="stars" type="choice">
             <choice>
                 <element inactive_on_update="false" label="1" sequence="0" value="1"/>

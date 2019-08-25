@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="DELETE" field="stars" table="x_86691_heardit_ratings" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stars</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1</label>
+            <language>en</language>
+            <name>x_86691_heardit_ratings</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-25 19:41:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>093bdbe81b2f33003fb27596cc4bcb86</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-25 19:41:45</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stars</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2</label>
+            <language>en</language>
+            <name>x_86691_heardit_ratings</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-25 19:41:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>493bdbe81b2f33003fb27596cc4bcb86</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-25 19:41:45</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stars</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3</label>
+            <language>en</language>
+            <name>x_86691_heardit_ratings</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-25 19:41:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>893bdbe81b2f33003fb27596cc4bcb86</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-25 19:41:45</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stars</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4</label>
+            <language>en</language>
+            <name>x_86691_heardit_ratings</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-25 19:41:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c93bdbe81b2f33003fb27596cc4bcb86</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-25 19:41:45</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stars</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5</label>
+            <language>en</language>
+            <name>x_86691_heardit_ratings</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-25 19:41:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d3bdbe81b2f33003fb27596cc4bcb86</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-25 19:41:45</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>stars</element>
+            <name>x_86691_heardit_ratings</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-25 19:41:45</sys_created_on>
+            <sys_id>013bdbe81b2f33003fb27596cc4bcb87</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>stars</sys_name>
+            <sys_package display_value="HeardIT" source="x_86691_heardit">684cf72edb723300b54c146139961914</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HeardIT">684cf72edb723300b54c146139961914</sys_scope>
+            <sys_update_name>sys_choice_x_86691_heardit_ratings_stars</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-25 19:41:45</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="HeardIT">684cf72edb723300b54c146139961914</application>
+        <file_path/>
+        <instance_id>3f05c969dbc37780b847ac44d496193e</instance_id>
+        <instance_name>dev90497</instance_name>
+        <name>sys_choice_x_86691_heardit_ratings_stars</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="stars" table="x_86691_heardit_ratings" version="3"><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>stars</element><hint/><inactive>false</inactive><label>1</label><language>en</language><name>x_86691_heardit_ratings</name><sequence>0</sequence><sys_created_by>admin</sys_created_by><sys_created_on>2019-08-25 19:41:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>093bdbe81b2f33003fb27596cc4bcb86</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-08-25 19:41:45</sys_updated_on><value>1</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>stars</element><hint/><inactive>false</inactive><label>2</label><language>en</language><name>x_86691_heardit_ratings</name><sequence>1</sequence><sys_created_by>admin</sys_created_by><sys_created_on>2019-08-25 19:41:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>493bdbe81b2f33003fb27596cc4bcb86</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-08-25 19:41:45</sys_updated_on><value>2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>stars</element><hint/><inactive>false</inactive><label>3</label><language>en</language><name>x_86691_heardit_ratings</name><sequence>2</sequence><sys_created_by>admin</sys_created_by><sys_created_on>2019-08-25 19:41:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>893bdbe81b2f33003fb27596cc4bcb86</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-08-25 19:41:45</sys_updated_on><value>3</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>stars</element><hint/><inactive>false</inactive><label>4</label><language>en</language><name>x_86691_heardit_ratings</name><sequence>3</sequence><sys_created_by>admin</sys_created_by><sys_created_on>2019-08-25 19:41:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c93bdbe81b2f33003fb27596cc4bcb86</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-08-25 19:41:45</sys_updated_on><value>4</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>stars</element><hint/><inactive>false</inactive><label>5</label><language>en</language><name>x_86691_heardit_ratings</name><sequence>4</sequence><sys_created_by>admin</sys_created_by><sys_created_on>2019-08-25 19:41:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0d3bdbe81b2f33003fb27596cc4bcb86</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-08-25 19:41:45</sys_updated_on><value>5</value></sys_choice><sys_choice_set action="INSERT_OR_UPDATE"><element>stars</element><name>x_86691_heardit_ratings</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-08-25 19:41:45</sys_created_on><sys_id>013bdbe81b2f33003fb27596cc4bcb87</sys_id><sys_mod_count>0</sys_mod_count><sys_name>stars</sys_name><sys_package display_value="HeardIT" source="x_86691_heardit">684cf72edb723300b54c146139961914</sys_package><sys_policy/><sys_scope display_value="HeardIT">684cf72edb723300b54c146139961914</sys_scope><sys_update_name>sys_choice_x_86691_heardit_ratings_stars</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-08-25 19:41:45</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+        <payload_hash>733388984</payload_hash>
+        <record_name>Ratings.Stars</record_name>
+        <reverted_from/>
+        <source>140635201b2333003fb27596cc4bcb26</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2019-08-25 12:19:36</sys_created_on>
+        <sys_id>613b1fe81b2f33003fb27596cc4bcb64</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>16cc8b7abc00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Choice list</type>
+        <update_guid>213b1fe84c2f330000778c31c0c6e764</update_guid>
+        <update_guid_history>213b1fe84c2f330000778c31c0c6e764:733388984</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-25 19:41:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_choice_set">sys_choice_set</sys_db_object>
+        <sys_id>013bdbe81b2f33003fb27596cc4bcb87</sys_id>
+        <sys_metadata>013bdbe81b2f33003fb27596cc4bcb87</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>stars</sys_name>
+        <sys_package display_value="HeardIT" source="x_86691_heardit">684cf72edb723300b54c146139961914</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="HeardIT">684cf72edb723300b54c146139961914</sys_scope>
+        <sys_scope_delete display_value="">67da56c449d2402caee565c336123a10</sys_scope_delete>
+        <sys_update_name>sys_choice_x_86691_heardit_ratings_stars</sys_update_name>
+        <sys_update_version display_value="sys_choice_x_86691_heardit_ratings_stars">613b1fe81b2f33003fb27596cc4bcb64</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-25 19:41:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

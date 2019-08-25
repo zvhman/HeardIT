@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <client_script><![CDATA[function(spModal) 
+{
+	/* widget controller */
+	var c = this;
+	var shared = {};
+ c.onWidget = function (){
+        spModal.open({
+					shared: shared,
+					value: c.response,
+            title: 'titkfadsf',
+            widget: 'rating_form', 
+            widgetInput: {}
+        }).then(function () {
+          	console.log(shared);
+					
+        })
+    }
+}]]></client_script>
         <controller_as>c</controller_as>
         <css/>
         <data_table>sp_instance</data_table>
@@ -18,51 +35,46 @@
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
 	data.books = [];
-var countRatings = new GlideAggregate('x_86691_heardit_ratings');
-//parm1: COUNT, MIN, MAX, parm2: field
-countRatings.addAggregate('COUNT', 'book');
-countRatings.addAggregate('AVG', 'stars');
-countRatings.query();
-while (countRatings.next()) {
-   var book = countRatings.getValue('book');
-   var ratingCount = countRatings.getAggregate('COUNT', 'book');
-  var averageRating = countRatings.getAggregate('AVG', 'stars');
-	data.books.push({
-		name:book,
-		averageRating:averageRating,
-		ratingCount: ratingCount
-	});
-}
-/*Output
-[0:00:00.345] Script completed in scope global: script
-*** Script: The are currently 1 items with a variable set of Generic Request
-*** Script: The are currently 154 items with a variable set of Request For
-*/
+	var countRatings = new GlideAggregate('x_86691_heardit_ratings');
+	//parm1: COUNT, MIN, MAX, parm2: field
+	countRatings.addAggregate('COUNT', 'book');
+	countRatings.addAggregate('AVG', 'stars');
+	countRatings.query();
+	while (countRatings.next()) {
+		var book = countRatings.getValue('book');
+		var ratingCount = countRatings.getAggregate('COUNT', 'book');
+		var averageRating = countRatings.getAggregate('AVG', 'stars');
+		data.books.push({
+			name:book,
+			averageRating:averageRating,
+			ratingCount: ratingCount
+		});
+	}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-08-25 18:52:31</sys_created_on>
         <sys_id>9cff0ba0db233300b54c1461399619db</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="HeardIT" source="x_86691_heardit">684cf72edb723300b54c146139961914</sys_package>
         <sys_policy/>
         <sys_scope display_value="HeardIT">684cf72edb723300b54c146139961914</sys_scope>
         <sys_update_name>sp_widget_9cff0ba0db233300b54c1461399619db</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-08-25 19:28:15</sys_updated_on>
+        <sys_updated_on>2019-08-25 22:16:12</sys_updated_on>
         <template><![CDATA[<div class="list-group">
   <a href="#" class="list-group-item" ng-repeat="book in c.data.books">
     {{book.name}} <span class="badge">{{book.ratingCount}}</span>
-    {{book}}
   </a>  
-  <a href="#" class="list-group-item" >
-    Add New
-  </a>
-</div>]]></template>
+</div>
+//HTML template
+<button ng-click="c.onWidget() "class="btn btn-default">
+    Add Rating
+  </button>]]></template>
     </sp_widget>
 </record_update>
