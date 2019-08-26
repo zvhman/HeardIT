@@ -14,8 +14,23 @@
             widget: 'rating_form', 
             widgetInput: {}
         }).then(function () {
-          	console.log(shared);
-					
+					console.log(shared);
+					c.data.bookrating=shared;
+					c.server.update()
+        })
+    }
+} 
+c.loadRating = function (){
+        spModal.open({
+					shared: shared,
+					value: c.response,
+            title: 'titkfadsf',
+            widget: 'rating_form', 
+            widgetInput: {}
+        }).then(function () {
+					console.log(shared);
+					c.data.bookrating=shared;
+					c.server.update()
         })
     }
 }]]></client_script>
@@ -36,7 +51,18 @@
         <roles/>
         <script><![CDATA[(function() {
 	/* populate the 'data' object */
-	/* e.g., data.table = $sp.getValue('table'); */
+	/* e.g., data.table = $sp.getValue('table'); */	
+	if (input) {//if submitted rating
+		console.log(input)
+		var rating=new GlideRecord('x_86691_heardit_ratings')
+		rating.newRecord();
+		rating.book=input.bookrating.title;
+		rating.stars=input.bookrating.stars;
+		rating.author=input.bookrating.input;
+		rating.genre=input.bookrating.genre;
+		rating.u_comments=input.bookrating.comments;
+		rating.insert()
+	}
 	data.books = [];
 	var countRatings = new GlideAggregate('x_86691_heardit_ratings');
 	//parm1: COUNT, MIN, MAX, parm2: field
@@ -53,20 +79,22 @@
 			ratingCount: ratingCount
 		});
 	}
+
+
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-08-25 18:52:31</sys_created_on>
         <sys_id>9cff0ba0db233300b54c1461399619db</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="HeardIT" source="x_86691_heardit">684cf72edb723300b54c146139961914</sys_package>
         <sys_policy/>
         <sys_scope display_value="HeardIT">684cf72edb723300b54c146139961914</sys_scope>
         <sys_update_name>sp_widget_9cff0ba0db233300b54c1461399619db</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-08-25 22:16:12</sys_updated_on>
+        <sys_updated_on>2019-08-25 22:43:55</sys_updated_on>
         <template><![CDATA[<div class="list-group">
   <a href="#" class="list-group-item" ng-repeat="book in c.data.books">
     {{book.name}} <span class="badge">{{book.ratingCount}}</span>
